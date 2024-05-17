@@ -1,0 +1,25 @@
+{
+    "platform": "instagram",
+    "services": {
+      "seguidores": [
+        {
+          "id": 1,
+          "service_name": "uno do22222222s",
+          "price_per_unit": 0.05
+        },
+        {
+          "id": 2,
+          "service_name": "Likes de Instagram",
+          "price_per_unit": 0.03
+        }
+      ],
+      "vistas": [
+        {
+          "id": 3,
+          "service_name": "Vistas de Instagram",
+          "price_per_unit": 0.02
+        }
+      ]
+    }
+  }
+  

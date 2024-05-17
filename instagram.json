@@ -1,0 +1,26 @@
+{
+  "platform": "instagram",
+  "services": {
+    "seguidores": [
+      {
+        "id": 1,
+        "service_name": "ID 1760 - Instagram - Seguidores con apariencia real - R60 - Max. 500k",
+        "price_per_unit": 0.000532
+      }
+    ],
+    "likes": [
+      {
+        "id": 2,
+        "service_name": "ID 3170 - Instagram - Me gusta - Alta calidad - Mundiales, Brasil, Latinos y USA - Max 20K 🔥",
+        "price_per_unit": 0.0001
+      }
+    ],
+    "vistas": [
+      {
+        "id": 3,
+        "service_name": "ID 3387 - Instagram - Vistas Video/Reel",
+        "price_per_unit": 0.000048
+      }
+    ]
+  }
+}

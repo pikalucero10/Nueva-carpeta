@@ -1,0 +1,27 @@
+{
+    "platform": "youtube",
+    "services": {
+      "seguidores": [
+        {
+          "id": 1,
+          "service_name": "ID 455 - YouTube - Suscriptores (Para aprobación de monetización) - Max 7.5K - R60",
+          "price_per_unit": 0.005684
+        }
+      ],
+      "likes": [
+        {
+          "id": 2,
+          "service_name": "ID 1380 - YouTube - Me gusta - España - R30 - Max 50k",
+          "price_per_unit": 0.001728
+        }
+      ],
+      "vistas": [
+        {
+          "id": 3,
+          "service_name": "ID 1856 - YouTube - Vistas - MONETIZABLES 0.1 a 4 usd - Máx. 100k - R30 - MULTIPLOS DE 500",
+          "price_per_unit": 0.002869
+        }
+      ]
+    }
+  }
+  

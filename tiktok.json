@@ -1,0 +1,27 @@
+{
+    "platform": "tiktok",
+    "services": {
+      "seguidores": [
+        {
+          "id": 1,
+          "service_name": "ID 2081 - TikTok - Seguidores con apariencia real - Max 20k - R30 ⚡",
+          "price_per_unit": 0.002727
+        }
+      ],
+      "likes": [
+        {
+          "id": 2,
+          "service_name": "ID 3254- TikTok - Me gusta - Max 100K ⚡ Caída: 2 - 5%",
+          "price_per_unit": 0.000595
+        }
+      ],
+      "vistas": [
+        {
+          "id": 3,
+          "service_name": "ID 3349 - TikTok - Vistas de Video - Max 1000M - ACTUALIZADO",
+          "price_per_unit": 0.000002
+        }
+      ]
+    }
+  }
+  
