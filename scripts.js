@@ -53,13 +53,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const adjustedPrice = totalPriceInPesos * (1 + dropPercentageValue);
         const sellPriceInPesos = adjustedPrice * (1 + profitMarginValue);
         const sellPriceInDollars = sellPriceInPesos / exchangeRate;
-
+    
         buyPrice.textContent = totalPriceInPesos.toFixed(2);
         sellPrice.textContent = sellPriceInPesos.toFixed(2);
         buyPriceUSD.textContent = (totalPriceInPesos / exchangeRate).toFixed(2);
         sellPriceUSD.textContent = sellPriceInDollars.toFixed(2);
         finalQuantity.textContent = adjustedQuantity.toFixed(0);
     }
-
+    
     updateServices();
 });
