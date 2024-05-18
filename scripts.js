@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalPrice = document.getElementById('totalPrice');
     const buyPrice = document.getElementById('buyPrice');
     const sellPrice = document.getElementById('sellPrice');
+    const buyPriceUSD = document.getElementById('buyPriceUSD');
+    const sellPriceUSD = document.getElementById('sellPriceUSD');
     const profitMargin = document.getElementById('profitMargin');
     const dropPercentage = document.getElementById('dropPercentage');
     const finalQuantity = document.getElementById('finalQuantity');
@@ -50,9 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const adjustedQuantity = quantity.value * (1 + dropPercentageValue);
         const adjustedPrice = totalPriceInPesos * (1 + dropPercentageValue);
         const sellPriceInPesos = adjustedPrice * (1 + profitMarginValue);
+        const sellPriceInDollars = sellPriceInPesos / exchangeRate;
 
         buyPrice.textContent = totalPriceInPesos.toFixed(2);
         sellPrice.textContent = sellPriceInPesos.toFixed(2);
+        buyPriceUSD.textContent = (totalPriceInPesos / exchangeRate).toFixed(2);
+        sellPriceUSD.textContent = sellPriceInDollars.toFixed(2);
         finalQuantity.textContent = adjustedQuantity.toFixed(0);
     }
 
