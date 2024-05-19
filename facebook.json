@@ -1,25 +1,19 @@
 {
-    "platform": "instagram",
-    "services": {
-      "seguidores": [
-        {
-          "id": 1,
-          "service_name": "ID 1892 - Facebook - Seguidores para páginas - R30 - Max 500K",
-          "price_per_unit": 0.00238
-        },
-        {
-          "id": 2,
-          "service_name": "Likes de Instagram",
-          "price_per_unit": 0.03
-        }
-      ],
-      "vistas": [
-        {
-          "id": 3,
-          "service_name": "Vistas de Instagram",
-          "price_per_unit": 0.02
-        }
-      ]
-    }
+  "platform": "facebook",
+  "services": {
+    "seguidores": [
+      {
+        "id": 1,
+        "service_name": "ID 1892 - Facebook - Seguidores para páginas - R30 - Max 500K",
+        "price_per_unit": 0.00238
+      }
+    ],
+    "likes": [
+      {
+        "id": 2,
+        "service_name": "Likes de Instagram",
+        "price_per_unit": 0.03
+      }
+    ]
   }
-  
+}
