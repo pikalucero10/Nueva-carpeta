@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceType = document.getElementById('serviceType');
     const serviceName = document.getElementById('serviceName');
     const quantity = document.getElementById('quantity');
-    const totalPrice = document.getElementById('totalPrice');
     const buyPrice = document.getElementById('buyPrice');
     const sellPrice = document.getElementById('sellPrice');
     const buyPriceUSD = document.getElementById('buyPriceUSD');
@@ -22,13 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let combinedData = { services: { seguidores: [], likes: [], vistas: [], minutos: [] } };
 
-    socialNetwork.addEventListener('change', updateServices);
-    serviceType.addEventListener('change', updateServices);
+    // Eventos
+    socialNetwork.addEventListener('change', updateIndividualServices);
+    serviceType.addEventListener('change', updateIndividualServices);
     quantity.addEventListener('input', updatePrice);
     profitMargin.addEventListener('input', updatePrice);
     dropPercentage.addEventListener('input', updatePrice);
     calculateCombo.addEventListener('click', calculateComboPrice);
 
+    // Cargar archivos JSON
     async function loadJSONFiles() {
         const urls = ['instagram.json', 'youtube.json', 'facebook.json', 'tiktok.json'];
         const requests = urls.map(url => fetch(url).then(response => response.json()));
@@ -43,17 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
                     combinedData.services[category] = combinedData.services[category].concat(data.services[category]);
                 });
             });
-            updateServices();
+            updateIndividualServices();
+            updateComboServices();
         } catch (error) {
             console.error('Error loading JSON files:', error);
         }
     }
 
-    function updateServices() {
+    // Actualizar servicios individuales según la red social seleccionada
+    function updateIndividualServices() {
+        const selectedNetwork = socialNetwork.value;
         const selectedType = serviceType.value;
 
         serviceName.innerHTML = '';
-        const services = combinedData.services[selectedType];
+        const services = combinedData.services[selectedType].filter(service => service.service_name.toLowerCase().includes(selectedNetwork));
         services.forEach(service => {
             const option = document.createElement('option');
             option.value = service.id;
@@ -61,6 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
             option.dataset.price = service.price_per_unit;
             serviceName.appendChild(option);
         });
+        updatePrice();
+    }
+
+    // Actualizar servicios en la sección de combos
+    function updateComboServices() {
         comboServices.forEach(select => {
             select.innerHTML = '';
             Object.keys(combinedData.services).forEach(category => {
@@ -73,9 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
-        updatePrice();
     }
 
+    // Actualizar precio
     function updatePrice() {
         const selectedService = serviceName.selectedOptions[0];
         const pricePerUnitInDollars = selectedService ? parseFloat(selectedService.dataset.price) : 0;
@@ -97,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         finalQuantity.textContent = adjustedQuantity.toFixed(0);
     }
 
+    // Calcular precio del combo
     function calculateComboPrice() {
         let totalBuyPrice = 0;
         let totalSellPrice = 0;

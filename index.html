@@ -9,67 +9,71 @@
 <body>
     <h1>Servicios de Redes Sociales</h1>
 
-    <label for="socialNetwork">Selecciona una red social:</label>
-    <select id="socialNetwork">
-        <option value="instagram">Instagram</option>
-        <option value="facebook">Facebook</option>
-        <option value="youtube">YouTube</option>
-        <option value="tiktok">TikTok</option>
-    </select>
+    <div id="individualServices">
+        <label for="socialNetwork">Selecciona una red social:</label>
+        <select id="socialNetwork">
+            <option value="instagram">Instagram</option>
+            <option value="facebook">Facebook</option>
+            <option value="youtube">YouTube</option>
+            <option value="tiktok">TikTok</option>
+        </select>
 
-    <label for="serviceType">Selecciona el tipo de servicio:</label>
-    <select id="serviceType">
-        <option value="seguidores">Seguidores</option>
-        <option value="likes">Likes</option>
-        <option value="vistas">Vistas</option>
-        <option value="minutos">Minutos</option>
-    </select>
+        <label for="serviceType">Selecciona el tipo de servicio:</label>
+        <select id="serviceType">
+            <option value="seguidores">Seguidores</option>
+            <option value="likes">Likes</option>
+            <option value="vistas">Vistas</option>
+            <option value="minutos">Minutos</option>
+        </select>
 
-    <label for="serviceName">Selecciona un servicio:</label>
-    <select id="serviceName"></select>
+        <label for="serviceName">Selecciona un servicio:</label>
+        <select id="serviceName"></select>
 
-    <label for="quantity">Cantidad:</label>
-    <input type="number" id="quantity" value="1000">
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" value="1000">
 
-    <label for="profitMargin">Margen de ganancia (%):</label>
-    <input type="number" id="profitMargin" value="10">
+        <label for="profitMargin">Margen de ganancia (%):</label>
+        <input type="number" id="profitMargin" value="10">
 
-    <label for="dropPercentage">Caídas (%):</label>
-    <input type="number" id="dropPercentage" value="0">
+        <label for="dropPercentage">Caídas (%):</label>
+        <input type="number" id="dropPercentage" value="0">
 
-    <p>Precio total: Comprar a <span id="buyPrice">0</span> - Vender a <span id="sellPrice">0</span></p>
-    <p>Precio en dólares: Comprar a <span id="buyPriceUSD">0</span> - Vender a <span id="sellPriceUSD">0</span></p>
-    <p>Cantidad ajustada: <span id="finalQuantity">0</span></p>
+        <p>Precio total: Comprar a <span id="buyPrice">0</span> - Vender a <span id="sellPrice">0</span></p>
+        <p>Precio en dólares: Comprar a <span id="buyPriceUSD">0</span> - Vender a <span id="sellPriceUSD">0</span></p>
+        <p>Cantidad ajustada: <span id="finalQuantity">0</span></p>
+    </div>
 
     <hr>
 
     <h2>Combos</h2>
 
-    <div>
-        <label for="comboService1">Servicio 1:</label>
-        <select class="comboService"></select>
-        <label for="comboQuantity1">Cantidad:</label>
-        <input type="number" class="comboQuantity" value="1000">
-        <label for="comboProfit1">Margen de ganancia (%):</label>
-        <input type="number" class="comboProfit" value="10">
-    </div>
+    <div id="combos">
+        <div>
+            <label for="comboService1">Servicio 1:</label>
+            <select class="comboService"></select>
+            <label for="comboQuantity1">Cantidad:</label>
+            <input type="number" class="comboQuantity" value="1000">
+            <label for="comboProfit1">Margen de ganancia (%):</label>
+            <input type="number" class="comboProfit" value="10">
+        </div>
 
-    <div>
-        <label for="comboService2">Servicio 2:</label>
-        <select class="comboService"></select>
-        <label for="comboQuantity2">Cantidad:</label>
-        <input type="number" class="comboQuantity" value="1000">
-        <label for="comboProfit2">Margen de ganancia (%):</label>
-        <input type="number" class="comboProfit" value="10">
-    </div>
+        <div>
+            <label for="comboService2">Servicio 2:</label>
+            <select class="comboService"></select>
+            <label for="comboQuantity2">Cantidad:</label>
+            <input type="number" class="comboQuantity" value="1000">
+            <label for="comboProfit2">Margen de ganancia (%):</label>
+            <input type="number" class="comboProfit" value="10">
+        </div>
 
-    <div>
-        <label for="comboService3">Servicio 3:</label>
-        <select class="comboService"></select>
-        <label for="comboQuantity3">Cantidad:</label>
-        <input type="number" class="comboQuantity" value="1000">
-        <label for="comboProfit3">Margen de ganancia (%):</label>
-        <input type="number" class="comboProfit" value="10">
+        <div>
+            <label for="comboService3">Servicio 3:</label>
+            <select class="comboService"></select>
+            <label for="comboQuantity3">Cantidad:</label>
+            <input type="number" class="comboQuantity" value="1000">
+            <label for="comboProfit3">Margen de ganancia (%):</label>
+            <input type="number" class="comboProfit" value="10">
+        </div>
     </div>
 
     <button id="calculateCombo">Calcular Combo</button>
