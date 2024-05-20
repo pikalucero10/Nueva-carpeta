@@ -6,6 +6,11 @@
         "id": 1,
         "service_name": "ID 1892 - Facebook - Seguidores para páginas - R30 - Max 500K",
         "price_per_unit": 0.00238
+      },
+      {
+        "id": 1,
+        "service_name": "ID 1370 - Facebook - Solicitudes de amistad - Real - Max. 100M - R30",
+        "price_per_unit": 0.002295
       }
     ],
     "likes": [
