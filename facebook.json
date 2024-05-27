@@ -11,6 +11,11 @@
         "id": 1,
         "service_name": "ID 1370 - Facebook - Solicitudes de amistad - Real - Max. 100M - R30",
         "price_per_unit": 0.002295
+      },
+      {
+        "id": 1,
+        "service_name": "ID 13139 - Facebook - Seguidores para páginas PAGINA NUEVA",
+        "price_per_unit": 0.00093
       }
     ],
     "likes": [
