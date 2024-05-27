@@ -53,18 +53,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Actualizar servicios individuales según la red social seleccionada
     function updateIndividualServices() {
-        const selectedNetwork = socialNetwork.value;
+        const selectedNetwork = socialNetwork.value.toLowerCase();
         const selectedType = serviceType.value;
 
         serviceName.innerHTML = '';
-        const services = combinedData.services[selectedType].filter(service => service.service_name.toLowerCase().includes(selectedNetwork));
-        services.forEach(service => {
-            const option = document.createElement('option');
-            option.value = service.id;
-            option.textContent = service.service_name;
-            option.dataset.price = service.price_per_unit;
-            serviceName.appendChild(option);
-        });
+        if (combinedData.services[selectedType]) {
+            const services = combinedData.services[selectedType].filter(service => {
+                return service.service_name.toLowerCase().includes(selectedNetwork);
+            });
+
+            services.forEach(service => {
+                const option = document.createElement('option');
+                option.value = service.id;
+                option.textContent = service.service_name;
+                option.dataset.price = service.price_per_unit;
+                serviceName.appendChild(option);
+            });
+        }
         updatePrice();
     }
 
