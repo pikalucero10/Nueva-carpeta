@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const profitMargin = document.getElementById('profitMargin');
     const dropPercentage = document.getElementById('dropPercentage');
     const finalQuantity = document.getElementById('finalQuantity');
-    const exchangeRate = 1100; // 1 dólar = 1100 pesos argentinos
+    const exchangeRate = 1300; // 1 dólar = 1100 pesos argentinos
 
     const comboServices = document.querySelectorAll('.comboService');
     const comboQuantities = document.querySelectorAll('.comboQuantity');
