@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Eventos
     socialNetwork.addEventListener('change', updateIndividualServices);
     serviceType.addEventListener('change', updateIndividualServices);
-    quantity.addEventListener('input', updatePrice);
+    quantity.addEventListener('input', updatePrice);1000500
     profitMargin.addEventListener('input', updatePrice);
     dropPercentage.addEventListener('input', updatePrice);
     calculateCombo.addEventListener('click', calculateComboPrice);
