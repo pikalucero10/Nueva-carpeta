@@ -4,29 +4,29 @@
       "seguidores": [
         {
           "id": 1,
-          "service_name": "ID 455 - YouTube - Suscriptores (Para aprobación de monetización) - Max 7.5K - R60",
-          "price_per_unit": 0.005684
+          "service_name": "ID 30 - Suscriptores de YouTube",
+          "price_per_unit": 0.00468
         }
       ],
       "likes": [
         {
           "id": 2,
-          "service_name": "ID 1380 - YouTube - Me gusta - España - R30 - Max 50k",
-          "price_per_unit": 0.001728
+          "service_name": "ID 27 - Me gusta de YouTube 500.000/día",
+          "price_per_unit": 0.00057
         }
       ],
       "vistas": [
         {
           "id": 3,
-          "service_name": "ID 1856 - YouTube - Vistas - MONETIZABLES 0.1 a 4 usd - Máx. 100k - R30 - MULTIPLOS DE 500",
-          "price_per_unit": 0.002869
+          "service_name": "ID 25 - Vistas de vídeos de YouTube ",
+          "price_per_unit": 0.00057
         }
       ],
       "minutos": [
         {
           "id": 4,
-          "service_name": "ID 1939 - YouTube - 4000 Horas Visualización - Vídeo de 15 minutos - R30",
-          "price_per_unit": 0.01326
+          "service_name": "ID 449 - Paquete de tiempo de reproducción de Youtube",
+          "price_per_unit": 0.0132
         }
       ]
     }
