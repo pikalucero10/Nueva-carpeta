@@ -12,7 +12,7 @@
         {
           "id": 2,
           "service_name": "ID 27 - Me gusta de YouTube 500.000/día",
-          "price_per_unit": 0.00057
+          "price_per_unit": 0.000587
         }
       ],
       "vistas": [
@@ -25,8 +25,8 @@
       "minutos": [
         {
           "id": 4,
-          "service_name": "ID 449 - Paquete de tiempo de reproducción de Youtube",
-          "price_per_unit": 0.0132
+          "service_name": "ID 2311 - YouTube - Vistas - Fuente FB+TW+IG - 1 a 2 minutos de retencion - Max 1M - R30",
+          "price_per_unit": 0.002712
         }
       ]
     }
